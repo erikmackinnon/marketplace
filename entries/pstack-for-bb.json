@@ -1,0 +1,26 @@
+{
+  "id": "pstack-for-bb",
+  "displayName": "pstack for bb",
+  "description": "Brings Lauren Tan's pstack skills into bb unchanged, and keeps them current with a daily sync from cursor/plugins. Turn pstack on by default or only in the projects you pick, and switch individual skills per project. Skills that other skills need stay on, so turning one off never breaks /poteto-mode or the skills it routes to. A Start here card walks through Lauren's recommended first steps, and the page shows the bundled pstack version and when a newer one exists. Unofficial MIT mirror, not affiliated with Lauren Tan or Cursor; some skills need Bun, GitHub CLI, or more than one model provider, and update checks contact GitHub.",
+  "icon": "Layers",
+  "screenshots": [
+    "./screenshots/pstack-for-bb/overview.png",
+    "./screenshots/pstack-for-bb/project.png",
+    "./screenshots/pstack-for-bb/dependencies.png",
+    "./screenshots/pstack-for-bb/skills.png"
+  ],
+  "overview": "./overview/pstack-for-bb.md",
+  "tags": ["skills", "poteto", "playbooks", "engineering", "code-review", "verification", "principles", "per-project", "upstream-sync"],
+  "author": {
+    "name": "Erik MacKinnon",
+    "github": "erikmackinnon",
+    "url": "https://github.com/erikmackinnon"
+  },
+  "category": "code-and-reviews",
+  "source": {
+    "git": {
+      "url": "https://github.com/erikmackinnon/bb-plugin-pstack-for-bb.git",
+      "range": "^0.1.2"
+    }
+  }
+}

@@ -1,4 +1,4 @@
-These are Lauren Tan's pstack skills: playbooks, investigation, verification, code review, and the engineering principles she uses day to day. This unofficial mirror brings them into bb without rewriting them, and keeps them current.
+Lauren Tan's pstack skill set, synced daily from cursor/plugins and adapted only where Cursor locations don't exist in bb. This unofficial mirror includes her playbooks, investigation, verification, code review, and engineering principles. See the [compatibility notes](https://github.com/erikmackinnon/bb-plugin-pstack-for-bb/blob/main/compat/README.md) for every mechanical change.
 
 ## What you get
 
@@ -9,11 +9,11 @@ These are Lauren Tan's pstack skills: playbooks, investigation, verification, co
 
 ## How it stays current
 
-A GitHub Actions job checks [cursor/plugins](https://github.com/cursor/plugins/tree/main/pstack) every day. When pstack changes, it copies her files unchanged, validates them, and publishes a new plugin release. Changes to executable helper scripts, or anything that fails a check, wait for a human review instead. The page shows the bundled pstack version and commit, and tells you when a newer release exists. Update with `bb plugin update pstack-for-bb`.
+A GitHub Actions job checks [cursor/plugins](https://github.com/cursor/plugins/tree/main/pstack) every day. When pstack changes, it preserves the upstream snapshot, applies the [documented compatibility rules](https://github.com/erikmackinnon/bb-plugin-pstack-for-bb/blob/main/compat/README.md), validates the bundle, and publishes a new plugin release. Changes to executable helper scripts, or anything that fails a check, wait for a human review instead. The page shows the bundled pstack version and commit, and tells you when a newer release exists. Update with `bb plugin update pstack-for-bb`.
 
 ## Compatibility with bb
 
-pstack was written for Cursor. Two skill names are normalized so bb can find them, and one helper script is adjusted so it never marks a bb worktree as safe to delete. Every change is listed in the [compatibility notes](https://github.com/erikmackinnon/bb-plugin-pstack-for-bb/blob/main/compat/README.md). A short note tells agents how Cursor terms map to bb tools.
+pstack was written for Cursor. Locations for writing and reading skills, saving model settings, and reading past chats use bb equivalents. `/setup-pstack` saves model choices directly to bb's user agent instructions. Lauren's workflows, playbooks, principles, and wording otherwise stay as written. Two skill names are also normalized for bb, and one helper script holds worktrees for a bb usage check before deletion. The [compatibility notes](https://github.com/erikmackinnon/bb-plugin-pstack-for-bb/blob/main/compat/README.md) list every mechanical change. A short runtime note maps Cursor tool names and model slugs to bb's available interfaces.
 
 ## Requirements
 
